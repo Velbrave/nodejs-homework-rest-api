@@ -3,6 +3,7 @@ const messages = {
   401: 'Unathorized',
   403: 'Forbidden',
   404: 'Not found',
+  409: 'Conflict',
 };
 
 const RequestError = (status, message = messages[status]) => {
