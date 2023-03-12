@@ -7,7 +7,7 @@
 
 Додатково для роботи проекту треба встановити модулі:
 
-express, mongoose, morgan, cors, dotenv, joi, jsonwebtoken, bcryptjs
+express, mongoose, morgan, cors, dotenv, joi, jsonwebtoken, bcryptjs, jimp, gravatar, multer
 
 Цей проект зберігає контакти кожного юзера окремо після регістрації та авторизації,юзер може
 додавати свої контакти, видаляти свої контакти, оновлювати контакти, зручний у пошуку потрібного
@@ -27,7 +27,7 @@ express, mongoose, morgan, cors, dotenv, joi, jsonwebtoken, bcryptjs
 
 Метод deleteById видаляє контакт із бази данних юзера.
 
-Метод register реєструє нового юзера.
+Метод register реєструє нового юзера та додає йому аватарку.
 
 Метод login авторизує юзера.
 
@@ -37,6 +37,10 @@ express, mongoose, morgan, cors, dotenv, joi, jsonwebtoken, bcryptjs
 
 Метод subscription оновлює підписку юзера.
 
+Метод updateAvatar оновлює аватарку юзера.
+
 Щоб запобігти не валідному вводу данних використана валідація потрібних полів.
 
 Також у цьому проекті опрацьовано більшість помилок які можуть виникнути,щоб захистити наш додадок.
+
+В цьому проекті за допомогою multer реалізоване завантаження файлів.
